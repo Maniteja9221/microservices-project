@@ -12,10 +12,9 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub-cred') {
                          sh 'docker push maniteja9221/adservice:latest'
-                     }
-                }
+                       }
+                       }  
                 }
             }
-        }
     }
 }
